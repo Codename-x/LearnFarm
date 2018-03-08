@@ -1,0 +1,18 @@
+PODS:
+  - IQKeyboardManagerSwift (5.0.7)
+  - lottie-ios (2.5.0)
+  - SwiftVideoBackground (2.1.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - lottie-ios
+  - SwiftVideoBackground (~> 2.1)
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  SwiftVideoBackground: 8d7386f2483b46deaa6065167038ff711f73740b
+
+PODFILE CHECKSUM: 02773e144a6f9586fba4ecbd79efda0b8438d8c0
+
+COCOAPODS: 1.4.0

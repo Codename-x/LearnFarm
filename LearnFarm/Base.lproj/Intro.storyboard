@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14101" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="LeARn_Farm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="40"/>
+        </scene>
+        <!--Second Intro View Controller-->
+        <scene sceneID="dDB-Mc-5F7">
+            <objects>
+                <viewController storyboardIdentifier="SBwelcome" id="JDW-45-fds" customClass="SecondIntroViewController" customModule="LeARn_Farm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gca-Ob-C3M">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvd-DB-Ss2">
+                                <rect key="frame" x="476" y="847" width="414" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="JDW-45-fds" eventType="touchUpInside" id="cxb-DK-DfA"/>
+                                    <segue destination="wff-yf-taw" kind="show" id="pXT-l2-DVn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3Z-Cn-Q82">
+                                <rect key="frame" x="1150" y="57" width="149" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="skip" image="SkipButton"/>
+                                <connections>
+                                    <action selector="skipButton:" destination="JDW-45-fds" eventType="touchUpInside" id="0FC-6g-pOd"/>
+                                    <segue destination="wff-yf-taw" kind="show" id="Y5U-qK-uVs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MGq-IX-Md8"/>
+                    </view>
+                    <connections>
+                        <outlet property="skipButton" destination="U3Z-Cn-Q82" id="NKa-OG-T5Z"/>
+                        <outlet property="startButton1" destination="nvd-DB-Ss2" id="zmg-YE-MMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1D1-Ws-KPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672.91361639824299" y="39.84375"/>
+        </scene>
+        <!--ARkit-->
+        <scene sceneID="0Xo-p1-Fno">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Arkit" storyboardName="ARkit" id="wff-yf-taw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUi-oS-xMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="-203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SkipButton" width="465" height="139"/>
+        <image name="Start" width="628" height="178"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pXT-l2-DVn"/>
+    </inferredMetricsTieBreakers>
+</document>
