@@ -54,7 +54,6 @@
 		A9BFA5BB205199BF00AC25B6 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BFA5AA205199BF00AC25B6 /* IQUITextFieldView+Additions.swift */; };
 		A9BFA5BC205199BF00AC25B6 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BFA5AB205199BF00AC25B6 /* IQUIView+Hierarchy.swift */; };
 		A9BFA5BD205199BF00AC25B6 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BFA5AC205199BF00AC25B6 /* IQNSArray+Sort.swift */; };
-		F5D2C5C3A4B0002E323076A8 /* Pods_LearFarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C6AA96CA4929DF0A08264C /* Pods_LearFarm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,8 +87,6 @@
 		06DE5DFF204F021F0093B730 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
 		06DE5E0B204F02240093B730 /* LogoAnimato2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LogoAnimato2.json; sourceTree = "<group>"; };
 		06DE5E0D204F02330093B730 /* VideoIntroduzione.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = VideoIntroduzione.mp4; sourceTree = "<group>"; };
-		71C6AA96CA4929DF0A08264C /* Pods_LearFarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearFarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74FDA7E860D31A4F11A0B5C0 /* Pods-LearFarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearFarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearFarm/Pods-LearFarm.debug.xcconfig"; sourceTree = "<group>"; };
 		868177C6203ED2F40013F3CB /* animalTexture */ = {isa = PBXFileReference; lastKnownFileType = folder; path = animalTexture; sourceTree = "<group>"; };
 		99985FEFACF4F32FFB659277 /* Pods-LeARn Farm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeARn Farm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeARn Farm/Pods-LeARn Farm.debug.xcconfig"; sourceTree = "<group>"; };
 		A440E0F23ED28B9802E5F180 /* Pods-LeARn Farm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeARn Farm.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeARn Farm/Pods-LeARn Farm.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,7 +109,6 @@
 		A9BFA5AA205199BF00AC25B6 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		A9BFA5AB205199BF00AC25B6 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		A9BFA5AC205199BF00AC25B6 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
-		D2C956FE071AF47BFC477F84 /* Pods-LearFarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearFarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearFarm/Pods-LearFarm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D2C5C3A4B0002E323076A8 /* Pods_LearFarm.framework in Frameworks */,
 				431D22636D9DAD158D7A903C /* Pods_LeARn_Farm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +190,6 @@
 		0D9F0D1770E0BAA7C9CE0BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				71C6AA96CA4929DF0A08264C /* Pods_LearFarm.framework */,
 				A724D59BD391407ABBBEE466 /* Pods_LeARn_Farm.framework */,
 			);
 			name = Frameworks;
@@ -269,8 +263,6 @@
 		B09C4E2D7B8327D3BF071675 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				74FDA7E860D31A4F11A0B5C0 /* Pods-LearFarm.debug.xcconfig */,
-				D2C956FE071AF47BFC477F84 /* Pods-LearFarm.release.xcconfig */,
 				99985FEFACF4F32FFB659277 /* Pods-LeARn Farm.debug.xcconfig */,
 				A440E0F23ED28B9802E5F180 /* Pods-LeARn Farm.release.xcconfig */,
 			);
