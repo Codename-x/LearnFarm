@@ -27,7 +27,11 @@ class PopUpViewController: UIViewController {
         UIImage(named: "pig_apple.png")!
     ]
     
-    var raccoglitoreImage: [UIImage] = []
+    var raccoglitoreImage: [UIImage] = [UIImage(named: "correct.png")!,
+                                        UIImage(named: "correct.png")!,
+                                        UIImage(named: "correct.png")!,
+                                        UIImage(named: "correct.png")!,
+                                        UIImage(named: "correct.png")!]
     
     var countErrati: Int = 0
     

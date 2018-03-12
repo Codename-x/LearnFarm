@@ -45,11 +45,26 @@ class ARkitViewController: UIViewController, ARSCNViewDelegate {
                 infoRaccoglitoreLabel.text = "ne truat nient "
             }else{
             infoRaccoglitoreLabel.text = "You have found "
-             try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[0]
-            try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[1]
-                try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[2]
-                try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[3]
-                try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[4]
+        
+                if PopUpViewController.sharedPopUp.raccoglitoreImage[0] != #imageLiteral(resourceName: "correct") {
+                    verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[0]
+                }
+                
+                if PopUpViewController.sharedPopUp.raccoglitoreImage[1] != #imageLiteral(resourceName: "correct") {
+                    verduraImage2.image = PopUpViewController.sharedPopUp.raccoglitoreImage[1]
+                }
+                
+                if PopUpViewController.sharedPopUp.raccoglitoreImage[2] != #imageLiteral(resourceName: "correct") {
+                    verduraImage3.image = PopUpViewController.sharedPopUp.raccoglitoreImage[2]
+                }
+                
+                if PopUpViewController.sharedPopUp.raccoglitoreImage[3] != #imageLiteral(resourceName: "correct") {
+                    verduraImage4.image = PopUpViewController.sharedPopUp.raccoglitoreImage[3]
+                }
+                
+                if PopUpViewController.sharedPopUp.raccoglitoreImage[4] != #imageLiteral(resourceName: "correct") {
+                    verduraImage5.image = PopUpViewController.sharedPopUp.raccoglitoreImage[4]
+                }
                 
             }
             infoRaccoglitore.isHidden = false
@@ -83,7 +98,6 @@ class ARkitViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        raccoglitoreButton.isHidden = true
         infoRaccoglitore.isHidden = true
         setLabelBorders(aLabel: labelDetect)
         labelDetect.text = "For Initializing the AR session, move to find a horizontal surface"

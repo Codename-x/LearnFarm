@@ -23,9 +23,9 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Learn Farm needs your camera for ARkit experience</string>
 	<key>UILaunchStoryboardName</key>
-	<string>Intro</string>
+	<string>ARkit</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Intro</string>
+	<string>ARkit</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
