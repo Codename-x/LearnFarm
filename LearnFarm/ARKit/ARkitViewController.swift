@@ -19,7 +19,12 @@ class ARkitViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var raccoglitoreButton: UIButton!
     @IBOutlet weak var infoRaccoglitore: UIView!
     @IBOutlet weak var infoRaccoglitoreLabel: UILabel!
-    @IBOutlet weak var infoRaccoglitoreImage: UIImageView!
+    @IBOutlet weak var verduraImage1: UIImageView!
+    @IBOutlet weak var verduraImage2: UIImageView!
+    @IBOutlet weak var verduraImage3: UIImageView!
+    @IBOutlet weak var verduraImage4: UIImageView!
+    @IBOutlet weak var verduraImage5: UIImageView!
+    
     
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(ARkitViewController.updateTimer)), userInfo: nil, repeats: true)
@@ -40,7 +45,12 @@ class ARkitViewController: UIViewController, ARSCNViewDelegate {
                 infoRaccoglitoreLabel.text = "ne truat nient "
             }else{
             infoRaccoglitoreLabel.text = "You have found "
-             infoRaccoglitoreImage.image = PopUpViewController.sharedPopUp.raccoglitoreImage[0]
+             try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[0]
+            try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[1]
+                try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[2]
+                try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[3]
+                try? verduraImage1.image = PopUpViewController.sharedPopUp.raccoglitoreImage[4]
+                
             }
             infoRaccoglitore.isHidden = false
         }
@@ -84,6 +94,7 @@ class ARkitViewController: UIViewController, ARSCNViewDelegate {
         self.ARScene.delegate = self
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         self.ARScene.addGestureRecognizer(tapGestureRecognizer)
+        self.infoRaccoglitore.backgroundColor = UIColor(patternImage: UIImage(named: "sfondoPopUp.png")!)
         // Do any additional setup after loading the view, typically from a nib.
         runTimer()
     }
